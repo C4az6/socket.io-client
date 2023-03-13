@@ -97,6 +97,7 @@ const sendMessage = () => {
 }
 
 socket.on('online', data => {
+  // 接收服务器发送的用户列表数据
   console.log('接收socket传递的数据 >>>> ', data);
   state.userlist = data;
 })
